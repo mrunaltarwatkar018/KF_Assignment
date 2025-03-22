@@ -1,0 +1,1050 @@
+/* A simple reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Utility container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sticky Header */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Logo on left, hamburger on right */
+  padding: 20px 0;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Left side (desktop) */
+.nav-left {
+  display: flex;
+  margin-right: 40px;
+  /* space before right side */
+}
+
+/* Right side (desktop) */
+.nav-right {
+  display: flex;
+}
+
+.nav-left li,
+.nav-right li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-left li:last-child,
+.nav-right li:last-child {
+  margin-right: 0;
+}
+
+/* Links */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #6a0dad;
+}
+
+/* Arrow (optional) */
+.arrow {
+  font-size: 0.8em;
+  margin-left: 4px;
+}
+
+/* Sign Up Button */
+.signup-btn {
+  background: #6a0dad;
+  color: #fff !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Hamburger icon - only visible on mobile */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2000;
+  /* ensure it sits on top */
+  color: #333;
+  /* make sure it's visible */
+}
+
+/* ABOUT SECTION */
+.about {
+  text-align: center;
+  padding: 150px 20px 50px;
+  /* 150px top padding to avoid being hidden under sticky header */
+}
+
+.about h3 {
+  color: #6a0dad;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+/* Journey Section */
+.journey {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  /* optional */
+}
+
+.journey-grid {
+  display: flex;
+  flex-direction: column;
+  /* mobile first: stack top to bottom */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* By default (mobile), show content first, then image. */
+.journey-content {
+  order: 1;
+  /* content first in mobile */
+}
+
+.journey-image {
+  order: 2;
+  /* image second in mobile */
+  width: 100%;
+}
+
+.journey-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  /* optional rounding */
+}
+
+/* Subheading */
+.journey-subtitle {
+  display: block;
+  font-size: 16px;
+  color: #6a0dad;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Main heading */
+.journey-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Paragraph */
+.journey-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Stats layout (mobile: stacked) */
+.journey-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Stat box styles */
+.stat-box h3 {
+  font-size: 28px;
+  color: #6a0dad;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+
+
+/************************************************
+  COMPANIES SECTION
+************************************************/
+.companies {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.companies-heading {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Mobile: 2 columns, so logos appear in pairs */
+.companies-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns on mobile */
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  /* center each logo in its cell */
+}
+
+.companies-logos img {
+  height: 40px;
+  /* Adjust to match your design */
+  object-fit: contain;
+}
+
+
+
+/************************************************
+    TEAM INTRO SECTION
+  ************************************************/
+.team-intro {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-subtitle {
+  display: block;
+  color: #6a0dad;
+  /* Purple shade */
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.team-description {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  /* center the paragraph */
+  line-height: 1.6;
+}
+
+.team-cta {
+  display: flex;
+  flex-direction: column;
+  /* stack in mobile */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Example button styles */
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5c00d1;
+  /* slightly darker hover */
+}
+
+.btn-secondary {
+  border: 1px solid #6a0dad;
+  color: #6a0dad;
+}
+
+.btn-secondary:hover {
+  background-color: #f3eafa;
+  /* subtle hover effect */
+}
+
+
+
+/************************************************
+    TEAM GRID SECTION
+  ************************************************/
+.team-grid-section {
+  padding: 60px 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* single column on mobile */
+  gap: 40px;
+}
+
+/* Team Card */
+.team-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  /* center content */
+}
+
+.team-card-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-card-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.team-card-role {
+  color: #6a0dad;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-card-info {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Social icons row */
+.team-card-socials a {
+  margin: 0 5px;
+}
+
+.team-card-socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* OUR VALUES SECTION */
+.our-values {
+  padding: 60px 20px;
+  text-align: center;
+  /* Center the main heading & subtitle */
+}
+
+.values-subtitle {
+  display: block;
+  font-size: 16px;
+  color: #6a0dad;
+  /* Purple color for the subtitle */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.values-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.values-description {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  /* center the paragraph & add bottom space */
+  line-height: 1.6;
+}
+
+/* GRID OF VALUES */
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* 1 column on mobile */
+  gap: 40px;
+  /* space between items */
+  text-align: center;
+  /* center each value item’s text */
+}
+
+/* Each value item */
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  /* optional max width */
+  margin: 0 auto;
+  /* center item horizontally */
+}
+
+/* Icon (you could use a fixed size if needed) */
+.value-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+/* Heading for each value */
+.value-heading {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Paragraph for each value */
+.value-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Container utility */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Talented People Section */
+.talented-people {
+  padding: 60px 0;
+}
+
+/* Header area */
+.talented-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Purple label text */
+.tagline {
+  display: inline-block;
+  font-size: 14px;
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+/* Main heading */
+.talented-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Supporting paragraph */
+.talented-header p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Image wrapper */
+.talented-image {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  /* space before job categories */
+}
+
+.talented-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  /* or contain, depending on your image */
+}
+
+/* Job categories */
+.job-category {
+  margin-bottom: 40px;
+}
+
+.job-category h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Job card styles */
+.job-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+}
+
+/* On hover, a subtle shadow */
+.job-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Meta row for Full-time / Salary */
+.job-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utility */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =======================================
+     CTA: Start your 30-day free trial
+  ======================================= */
+.cta-trial {
+  border-bottom: 1px solid #eee;
+  padding: 60px 0;
+  background-color: #fff;
+  /* or #f9f9f9 if needed */
+}
+
+/* Flex container for CTA */
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* mobile first */
+  gap: 20px;
+}
+
+/* CTA Left (Text) */
+.cta-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.cta-left p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* CTA Right (Buttons) */
+.cta-right {
+  display: flex;
+  gap: 15px;
+  /* space between the two buttons */
+  align-items: center;
+}
+
+/* Button styles */
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Primary: Purple fill */
+.btn-primary {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5c00d1;
+}
+
+/* Secondary: Purple outline */
+.btn-secondary {
+  border: 1px solid #6a0dad;
+  color: #6a0dad;
+}
+
+.btn-secondary:hover {
+  background-color: #f3eafa;
+}
+
+
+
+/* =======================================
+     FOOTER SECTION
+  ======================================= */
+.site-footer {
+  background-color: #fff;
+  padding-top: 60px;
+}
+
+/* FOOTER TOP */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  /* mobile stack */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Brand area */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-brand-desc {
+  font-size: 14px;
+  color: #555;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+/* Footer Columns (5 columns) */
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* single column on mobile */
+  gap: 30px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #6a0dad;
+}
+
+/* New badge style */
+.new-badge {
+  background-color: #6a0dad;
+  color: #fff;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  /* mobile stack */
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+}
+
+.footer-socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+
+/* Container utility */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer top */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  /* stack brand + columns on mobile */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Brand area */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-brand-desc {
+  font-size: 14px;
+  color: #555;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+/* Footer columns */
+.footer-columns {
+  display: grid;
+  /* Mobile: 2 columns => pairs, leftover goes alone in last row */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #6a0dad;
+}
+
+/* New badge styling */
+.new-badge {
+  background-color: #6a0dad;
+  color: #fff;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  /* mobile stack */
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+}
+
+.footer-socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  /* Navigation: show hamburger, slide nav-links offscreen */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 20px;
+    z-index: 999;
+  }
+
+  /* Stack nav-left and nav-right vertically */
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .nav-left li,
+  .nav-right li {
+    margin-bottom: 20px;
+  }
+
+  /* Slide in nav-links when .open is added */
+  .nav-links.open {
+    right: 0;
+  }
+
+  /* Talented section typography for mobile */
+  .talented-header h2 {
+    font-size: 24px;
+  }
+  .job-category h3 {
+    font-size: 20px;
+  }
+  .job-card h4 {
+    font-size: 16px;
+  }
+}
+
+/* Tablet & Desktop styles */
+@media (min-width: 768px) {
+  /* Navigation: inline nav-links, hide hamburger */
+  .nav-links {
+    position: static;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    right: auto;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Journey section */
+  .journey-grid {
+    flex-direction: row;
+    align-items: center;
+  }
+  .journey-image {
+    order: 1;
+    flex: 1;
+  }
+  .journey-content {
+    order: 2;
+    flex: 1;
+  }
+  .journey-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+  }
+
+  /* Companies logos in one row */
+  .companies-logos {
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+  }
+
+  /* Team CTA and grid */
+  .team-cta {
+    flex-direction: row;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Values grid for larger screens */
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .value-item {
+    max-width: 100%;
+  }
+
+  /* Talented section typography for tablet & desktop */
+  .talented-people {
+    padding: 80px 0;
+  }
+  .talented-header h2 {
+    font-size: 36px;
+  }
+  .job-category h3 {
+    font-size: 26px;
+  }
+  .job-card h4 {
+    font-size: 18px;
+  }
+
+  /* CTA trial and wrapper */
+  .cta-trial {
+    padding: 80px 0;
+  }
+  .cta-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Footer styles */
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-columns {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
+
+/* Desktop additional styles */
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled UI</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo on the far left -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Untitled UI" />
+            </div>
+
+            <!-- Navigation container (both left & right links) -->
+            <nav class="nav-links" id="navLinks">
+                <!-- Left items (with down arrows) -->
+                <ul class="nav-left">
+                    <li><a href="#">Home <span class="arrow">&#9662;</span></a></li>
+                    <li><a href="#">Products <span class="arrow">&#9662;</span></a></li>
+                    <li><a href="#">Resources <span class="arrow">&#9662;</span></a></li>
+                    <li><a href="#">Pricing <span class="arrow">&#9662;</span></a></li>
+                </ul>
+                <!-- Right items (Log In & Sign Up) -->
+                <ul class="nav-right">
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#" class="signup-btn">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger / Close icon on the far right (shown in mobile) -->
+            <div class="hamburger" id="hamburgerBtn">&#9776;</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Example about section -->
+        <section class="about">
+            <h3>About us</h3>
+            <h1>About the company</h1>
+            <p>Learn more about the company and the team behind it.</p>
+        </section>
+        <!-- Add more sections here as needed -->
+
+        <section class="journey">
+            <div class="container journey-grid">
+                <!-- IMAGE (will appear below text on mobile, left on desktop) -->
+                <div class="journey-image">
+                    <img src="images/office.jpeg" alt="Office Desk" />
+                </div>
+
+                <!-- TEXT & STATS (will appear above image on mobile, right on desktop) -->
+                <div class="journey-content">
+                    <span class="journey-subtitle">We’ve helped hundreds of companies</span>
+                    <h2 class="journey-title">
+                        We’re only just getting started on our journey
+                    </h2>
+                    <p class="journey-description">
+                        Everything you need to build modern UI and great products.
+                        We’ve done all the heavy lifting so you don’t have to —
+                        the perfect starting point for any project.
+                    </p>
+
+                    <div class="journey-stats">
+                        <div class="stat-box">
+                            <h3>400+</h3>
+                            <p>Projects completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>600%</h3>
+                            <p>Return on investment</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>10k</h3>
+                            <p>Global downloads</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>200+</h3>
+                            <p>5-star reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COMPANIES SECTION -->
+        <section class="companies">
+            <div class="container">
+                <p class="companies-heading">
+                    From startups to the world’s largest companies
+                </p>
+                <div class="companies-logos">
+                    <!-- 6 logos -->
+                    <img src="images/layers.png" alt="Layers" />
+                    <img src="images/sisyphus.png" alt="Sisyphus" />
+                    <img src="images/circooles.png" alt="Circooles" />
+                    <img src="images/catalog.png" alt="Catalog" />
+                    <img src="images/quotient.png" alt="Quotient" />
+                    <img src="images/hourglass.png" alt="Hourglass" />
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM INTRO SECTION -->
+        <section class="team-intro">
+            <div class="container">
+                <span class="team-subtitle">We’re hiring!</span>
+                <h2 class="team-title">Meet our team</h2>
+                <p class="team-description">
+                    Our philosophy is simple — hire a team of diverse, passionate people and
+                    foster a culture that empowers you to do your best work.
+                </p>
+                <div class="team-cta">
+                    <a href="#" class="btn-primary">Open positions</a>
+                    <a href="#" class="btn-secondary">About us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM GRID SECTION -->
+        <section class="team-grid-section">
+            <div class="container">
+                <div class="team-grid">
+                    <!-- Team Member Card 1 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/olivia.png" alt="Olivia Rhye" />
+                        </div>
+                        <h3 class="team-card-name">Olivia Rhye</h3>
+                        <p class="team-card-role">Founder &amp; CEO</p>
+                        <p class="team-card-info">
+                            Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+                        </p>
+                        <div class="team-card-socials">
+                            <!-- Use your renamed social icons -->
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 2 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/phoenix.png" alt="Phoenix Baker" />
+                        </div>
+                        <h3 class="team-card-name">Phoenix Baker</h3>
+                        <p class="team-card-role">Engineering Manager</p>
+                        <p class="team-card-info">
+                            Lead engineering teams at Figma, Pitch, and Protocol Labs.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 3 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/lana.png" alt="Lana Steiner" />
+                        </div>
+                        <h3 class="team-card-name">Lana Steiner</h3>
+                        <p class="team-card-role">Product Manager</p>
+                        <p class="team-card-info">
+                            Former PM for Mixer, Lambda School, and On Deck.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 4 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/demi.png" alt="Demi Wilkinson" />
+                        </div>
+                        <h3 class="team-card-name">Demi Wilkinson</h3>
+                        <p class="team-card-role">Marketing Lead</p>
+                        <p class="team-card-info">
+                            Known for viral campaigns at Linear, Pitch, and Loom.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 5 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/candice.png" alt="Candice Wu" />
+                        </div>
+                        <h3 class="team-card-name">Candice Wu</h3>
+                        <p class="team-card-role">Backend Developer</p>
+                        <p class="team-card-info">
+                            Former Backend Lead at Amazon, Clearbit, and Loom.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 6 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/natali.png" alt="Natali Craig" />
+                        </div>
+                        <h3 class="team-card-name">Natali Craig</h3>
+                        <p class="team-card-role">Product Designer</p>
+                        <p class="team-card-info">
+                            Design experience at Figma, Framer, Revue, Stripe.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 7 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/drew.png" alt="Drew Cano" />
+                        </div>
+                        <h3 class="team-card-name">Drew Cano</h3>
+                        <p class="team-card-role">UX Researcher</p>
+                        <p class="team-card-info">
+                            Conducted research for Netflix and Udacity.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="DRIBBLE" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member Card 8 -->
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="images/orlando.png" alt="Orlando Diggs" />
+                        </div>
+                        <h3 class="team-card-name">Orlando Diggs</h3>
+                        <p class="team-card-role">Customer Success</p>
+                        <p class="team-card-info">
+                            Customer success at Frame, PaperQuery &amp; Segment.
+                        </p>
+                        <div class="team-card-socials">
+                            <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                            <a href="#"><img src="images/dribbble.png" alt="Twitter" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-values">
+            <div class="container">
+                <span class="values-subtitle">Our values</span>
+                <h2 class="values-title">How we work at Untitled</h2>
+                <p class="values-description">
+                    Our shared values keep us connected and guide us as one team.
+                </p>
+
+                <div class="values-grid">
+                    <!-- Value Item 1 -->
+                    <div class="value-item">
+                        <!-- Replace with actual icon image or SVG -->
+                        <div class="value-icon">
+                            <img src="images/logo1.png" alt="Care about our team icon" />
+                        </div>
+                        <h3 class="value-heading">Care about our team</h3>
+                        <p class="value-text">
+                            Understand what matters to our employees. Give them what they need to do their best work.
+                        </p>
+                    </div>
+
+                    <!-- Value Item 2 -->
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="images/logo2.png" alt="Be excellent to each other icon" />
+                        </div>
+                        <h3 class="value-heading">Be excellent to each other</h3>
+                        <p class="value-text">
+                            No games. No bullshit. We rely on our peers to improve. Be open, honest and kind.
+                        </p>
+                    </div>
+
+                    <!-- Value Item 3 -->
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="images/logo3.png" alt="Pride in what we do icon" />
+                        </div>
+                        <h3 class="value-heading">Pride in what we do</h3>
+                        <p class="value-text">
+                            Value quality and integrity in everything we do. At all times. No exceptions.
+                        </p>
+                    </div>
+
+                    <!-- Value Item 4 -->
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="images/logo4.png" alt="Don't #!& the customer icon" />
+                        </div>
+                        <h3 class="value-heading">Don’t #!& the customer</h3>
+                        <p class="value-text">
+                            Understand customers' stated and unstated needs. Make them wildly successful.
+                        </p>
+                    </div>
+
+                    <!-- Value Item 5 -->
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="images/logo5.png" alt="Do the impossible icon" />
+                        </div>
+                        <h3 class="value-heading">Do the impossible</h3>
+                        <p class="value-text">
+                            Be energized by difficult problems. Revel in unknowns. Ask “Why?”, but always question, “Why
+                            not?”
+                        </p>
+                    </div>
+
+                    <!-- Value Item 6 -->
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <img src="images/logo6.png" alt="Sweat the small stuff icon" />
+                        </div>
+                        <h3 class="value-heading">Sweat the small stuff</h3>
+                        <p class="value-text">
+                            We believe the best products come from the best attention to detail. Sweat the small stuff.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Talented People Section</title>
+            <link rel="stylesheet" href="styles.css" />
+        </head>
+
+        <body>
+
+            <!-- Talented People Section -->
+            <section class="talented-people">
+                <div class="container">
+                    <!-- Heading area -->
+                    <div class="talented-header">
+                        <span class="tagline">Open positions</span>
+                        <h2>We're looking for talented people</h2>
+                        <p>We're a 100% remote team spread all across the world. Join us!</p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="talented-image">
+                        <!-- Replace with your actual image path -->
+                        <img src="images/positions.png" alt="Team meeting" />
+                    </div>
+
+                    <!-- Job Categories -->
+                    <!-- 1) Design Category -->
+                    <div class="job-category">
+                        <h3>Design</h3>
+
+                        <!-- Job 1 -->
+                        <div class="job-card">
+                            <h4>Product Designer</h4>
+                            <p>We're looking for a mid-level product designer to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="job-card">
+                            <h4>UX Designer</h4>
+                            <p>We're looking for a mid-level UX designer to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2) Software Development Category -->
+                    <div class="job-category">
+                        <h3>Software Development</h3>
+
+                        <!-- Job 1 -->
+                        <div class="job-card">
+                            <h4>Engineering Manager</h4>
+                            <p>We're hiring for an experienced engineering manager to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="job-card">
+                            <h4>Frontend Developer</h4>
+                            <p>We're looking for an experienced frontend developer to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+
+                        <!-- Job 3 -->
+                        <div class="job-card">
+                            <h4>Backend Developer</h4>
+                            <p>We're looking for an experienced backend developer to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3) Customer Success Category -->
+                    <div class="job-category">
+                        <h3>Customer Success</h3>
+
+                        <!-- Job 1 -->
+                        <div class="job-card">
+                            <h4>Customer Success Manager</h4>
+                            <p>We're looking for an experienced customer success manager to join our team.</p>
+                            <div class="job-meta">
+                                <span>Full-time</span>
+                                <span>$8k - $10k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </body>
+
+        </html>
+
+
+
+
+
+        <!-- CTA Section -->
+        <section class="cta-trial">
+            <div class="container cta-wrapper">
+                <!-- Left side: CTA text -->
+                <div class="cta-left">
+                    <h2>Start your 30-day free trial</h2>
+                    <p>Join over 4,000+ startups already growing with Untitled.</p>
+                </div>
+
+                <!-- Right side: Buttons -->
+                <div class="cta-right">
+                    <a href="#" class="btn-secondary">Learn more</a>
+                    <a href="#" class="btn-primary">Get started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-top">
+                <!-- Brand (Logo + short text) -->
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Untitled UI" class="footer-logo" />
+                    <p class="footer-brand-desc">
+                        Design amazing digital experiences that create more happy in the world.
+                    </p>
+                </div>
+
+                <!-- Footer columns (Product, Company, Resources, Social, Legal) -->
+                <div class="footer-columns">
+                    <!-- Product Column -->
+                    <div class="footer-col">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li>
+                                <a href="#">
+                                    Solutions <span class="new-badge">New</span>
+                                </a>
+                            </li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Releases</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Column -->
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Media kit</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources Column -->
+                    <div class="footer-col">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Help centre</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Column -->
+                    <div class="footer-col">
+                        <h3>Social</h3>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">AngelList</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal Column -->
+                    <div class="footer-col">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Licenses</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="container footer-bottom">
+                <p class="footer-copy">
+                    © 2077 Untitled UI. All rights reserved.
+                </p>
+                <div class="footer-socials">
+                    <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="images/github.png" alt="GitHub" /></a>
+                    <a href="#"><img src="images/hand.png" alt="Hand" /></a>
+                    <a href="#"><img src="images/dribbble.png" alt="Dribbble" /></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
